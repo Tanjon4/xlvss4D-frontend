@@ -1,5 +1,8 @@
 import { RouterProvider } from "react-router-dom";
 import router from "./routes/AppRoutes";
+import { useLangStore } from "./store/language.store";
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const App = () => {
 
