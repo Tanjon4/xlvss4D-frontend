@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Produits from "./pages/Produits";
-import React from "react";
 import "./App.css"
+import Devis from "./components/Devis";
 
 const App = () => {
   return (
@@ -10,6 +10,7 @@ const App = () => {
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/produits" element={<Produits />} />
+          <Route path="/devis" element={<Devis />} />
       </Routes>
     </BrowserRouter>
   );
