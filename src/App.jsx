@@ -1,18 +1,16 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Produits from "./pages/Produits";
-import "./App.css"
-import Devis from "./components/Devis";
+import { RouterProvider } from "react-router-dom";
+import router from "./routes/AppRoutes";
 
 const App = () => {
+
+  const lang = useLangStore();
+  const i18n = useTranslation();
+  useEffect(() => {
+    i18n.i18n.changeLanguage(lang.lang);
+    document.documentElement.lang = lang.lang;
+  }, [lang]);
   return (
-    <BrowserRouter>
-      <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/produits" element={<Produits />} />
-          <Route path="/devis" element={<Devis />} />
-      </Routes>
-    </BrowserRouter>
+      <RouterProvider router={router}/>
   );
 }
 export default App;
