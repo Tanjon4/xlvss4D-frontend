@@ -15,7 +15,7 @@ const Navigation = () => {
                 Contacts
             </Link>
             <Link to="/produit" className="text-base ml-10">
-                Produits
+                Products
             </Link>
             <Link to="/login" className="text-base ml-10">
                 Login
@@ -24,12 +24,12 @@ const Navigation = () => {
                 Register
             </Link>
             <Link to="/lists" className="text-base ml-10">
-                products list
+                Products list
             </Link>
             </div>
         <div>
-            <Link to="/serch" className="text-base ml-5">
-                Search
+            <Link to="/serch" className="text-base text-black">
+            <i class="fa-solid fa-magnifying-glass"></i>
             </Link>
         </div>   
         </nav>
