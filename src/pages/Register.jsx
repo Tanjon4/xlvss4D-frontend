@@ -4,7 +4,7 @@ const Register = () => {
   return (
     <>
       <Navigation />
-      <div className="flex justify-center items-center min-h-screen bg-gray-100">
+      <div className="flex justify-center items-center min-h-screen bg-gray-100 mt-10">
         <form className="bg-white shadow-md rounded-2xl p-10 w-full max-w-md">
           <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">Register</h1>
 
