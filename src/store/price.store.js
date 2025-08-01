@@ -9,6 +9,9 @@ export const usePriceStore = create((
                 const newCurrency = get().currency === "Ariary" ? "Euro" : "Ariary";
                 set({ currency: newCurrency });
             },
+            setCurrency: (newCurrency) => {
+                set({ currency: newCurrency });
+            },
             getCurrency: () => get().currency,
             getCurrencySymbol: () => {
                 const currency = get().currency;
