@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/layout/Navigation";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import LanguageDetector from 'i18next-browser-languagedetector'
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import Footer from "../components/layout/Footer";
@@ -21,11 +22,11 @@ const Contacts = () => {
   }, []);
 
   return (
-    <div>
-      <Header/>
-      <Navigation/>
-      <div className="m-5 flex flex-row items-center">
-        <ul className="flex flex-row gap-4">
+    <div className="min-h-screen flex flex-col">
+      <Navigation />
+      
+      <div className=" py-4 px-5 md:px-10 max-w-7xl mx-auto w-full text-underline">
+        <ul className="flex items-center gap-2 text-sm md:text-base">
           <li>
             <Link to="/" className="text-gray-600 hover:text-blue-800 transition-colors">{t("Accueil")}</Link>
           </li>
