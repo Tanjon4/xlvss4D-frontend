@@ -1,7 +1,9 @@
+import Navigation from "../components/layout/Navigation";
 
 const NotFound = () => {
   return (
-    <div className="not-found">
+    <div className="">
+      <Navigation />
       <h1>404</h1>
       <p>Page not found</p>
     </div>
