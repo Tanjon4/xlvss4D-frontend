@@ -5,5 +5,23 @@
   "products": "Produits",
   "login": "Connexion",
   "register": "Inscription",
-  "productsList": "Liste des Produits"
+  "productsList": "Liste des Produits",
+  "we_are_here": "Nous sommes ici",
+  "Contact_Us": "Contactez-nous",
+  "There_are":"Il existe de nombreuses façons de nous contacter. Vous pouvez nous envoyer un message, nous appeler ou nous écrire un email, choisissez ce qui vous convient le mieux.", 
+                
+  "Phone": "Téléphone",
+  "email": "Email",
+  "addresse": "Adresse",
+  "heure_ouverture": "Heures d'ouverture",
+  "days": "(Lun-Ven)",
+  "Dimanche": "Dimanche : Fermé",
+  "suivre": "Suivez-nous",
+  "prennez_contact": "Prenez contact avec nous !",
+  "remplir": "Remplissez le formulaire ci-dessous pour recevoir une réponse rapide et confidentielle.",
+  "nom": "Nom",
+  "site": "Site web",
+  "message": "Message",
+  "envoyer_message": "Envoyer le message"
+
 }
