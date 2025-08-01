@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import Navigation from "../components/layout/Navigation";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import LanguageDetector from 'i18next-browser-languagedetector'
+import LanguageDetector from 'i18next-browser-languagedetector';
+import { useTranslation } from 'react-i18next';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import Footer from "../components/layout/Footer";
@@ -20,6 +21,7 @@ const Contacts = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const { t } = useTranslation();
 
   return (
     <div className="min-h-screen flex flex-col">
