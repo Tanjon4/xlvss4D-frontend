@@ -1,4 +1,5 @@
 import Navigation from "../components/layout/Navigation";
+import Footer from "../components/layout/Footer";
 
 const Login = () => {
   return (
@@ -64,6 +65,7 @@ const Login = () => {
           </button>
         </form>
       </div>
+      <Footer />
     </>
   );
 };

@@ -1,3 +1,9 @@
 {
-  "welcome": "Bienvenue "
+  "welcome": "Bienvenue",
+  "home": "Accueil",
+  "contacts": "Contacts",
+  "products": "Produits",
+  "login": "Connexion",
+  "register": "Inscription",
+  "productsList": "Liste des Produits"
 }
