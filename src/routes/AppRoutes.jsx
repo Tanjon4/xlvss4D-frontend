@@ -9,6 +9,7 @@ import Produits from "../pages/Produits";
 
 
 
+
 const fallback = <Loader/>
 const Home = lazy(() => import("../pages/Home"));
 const Contacts = lazy(() => import("../pages/Contacts"));

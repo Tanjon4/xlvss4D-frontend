@@ -1,3 +1,9 @@
 {
-  "welcome": "welcome"
+  "welcome": "welcome",
+  "home": "Home",
+  "contacts": "Contacts",
+  "products": "Products",
+  "login": "Login",
+  "register": "Register",
+  "productsList": "Products List"
 }

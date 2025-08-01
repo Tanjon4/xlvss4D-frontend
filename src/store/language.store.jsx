@@ -7,15 +7,14 @@ export const useLangStore = create(
       lang: "fr",
       toggleLang: () => {
         const currentLang = get().lang;
-        const newLang = currentLang === "fr" ? "en" : currentLang === "en" ? "mg" : "fr";
+        const newLang = currentLang === "fr" ? "en" : currentLang === "fr" ? "mg" : "en";
 
         set({ lang: newLang });
 
         document.documentElement.lang = newLang;
       },
-      setLang: (newLang) => {
-        set({ lang: newLang });
-        document.documentElement.lang = newLang;
+      setLang:(newLang)=> {
+          set({ lang: newLang });
       },
     }),
     {
