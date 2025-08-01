@@ -1,9 +1,18 @@
 import LanguageSwitcher from "../testLangue";
 import CurrencyDisplay from "../TestPrice";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const Header = () => {
+  const navigate = useNavigate()
+
+  const handleChange = (e) => {
+    const path = e.target.value;
+    if (path) {
+      navigate(path);
+    }
+    }
+
   return (
     <header className="flex justify-between items-center bg-gray-800 text-gray-400 px-40">
        <div className="flex items-center space-x-4">
@@ -13,14 +22,10 @@ const Header = () => {
        <div className="flex justify-around space-x-3 items-center">
             <CurrencyDisplay />
             <LanguageSwitcher/>
-            <select name="" id="" className="bg-gray-800 text-gray-400">
-              <option value="" defaultChecked>My Account</option>
-              <option value="/login" className="text-base ml-10">
-                <Link to="/login" className="text-gray-700">login</Link>
-            </option>
-            <option value="/register" className="text-base ml-10">
-                <Link to="/register" className="text-gray-700">register</Link>
-            </option>
+            <select name="" id="" className="bg-gray-800 text-gray-400" onChange={handleChange}>
+              <option value="" className="relative group cursor-pointer">My Account</option>
+              <option value="/login"  className="block px-3 py-2 hover:bg-gray-100">login</option>
+              <option value="/register" className="block px-3 py-2 hover:bg-gray-100">Register</option>
             </select>
             
            

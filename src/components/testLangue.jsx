@@ -13,13 +13,12 @@ export default function LanguageSwitcher() {
   }
   return (
     <>
-    <select onChange={toggleLang} className="bg-gray-800 border-gray-400 rounded border-x py-3 px-3">
+    <select onChange={toggleLang} className="bg-gray-800 bg-transparent border-x py-3 px-3 border-gray-600 cursor-pointer focus:outline-none ">
       <option value="fr">Français</option>
       <option value="en">English</option>
       <option value="mg">Malagasy</option>
     </select>
     </>
   );
-
 
 }
