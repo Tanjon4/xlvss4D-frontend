@@ -7,8 +7,12 @@ const CurrencyDisplay = () => {
 
   return (
     <div>
-      <p>Devise actuelle : {currency} ({symbol})</p>
-      <button onClick={toggleCurrency}>Changer de devise</button>
+      <select name="" id="" onChange={toggleCurrency} className="bg-gray-800 rounded">
+        <option value="AR">Ariary</option>
+        <option value="EUR">Euro</option>
+        <option value="DOL">Dollar</option>
+      </select>
+      
     </div>
   );
 };
