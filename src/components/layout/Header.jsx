@@ -15,9 +15,14 @@ const Header = () => {
             <LanguageSwitcher/>
             <select name="" id="" className="bg-gray-800 text-gray-400">
               <option value="" defaultChecked>My Account</option>
+              <option value="/login" className="text-base ml-10">
+                <Link to="/login" className="text-gray-700">login</Link>
+            </option>
+            <option value="/register" className="text-base ml-10">
+                <Link to="/register" className="text-gray-700">register</Link>
+            </option>
             </select>
-            <Link to="/register">Register</Link>
-            <Link to="/login">Login</Link>
+            
            
        </div>
     </header>

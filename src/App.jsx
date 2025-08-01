@@ -3,10 +3,10 @@ import router from "./routes/AppRoutes";
 import { useLangStore } from "./store/language.store";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-
+import "./translations/i18next.jsx";
 const App = () => {
 
-  const lang = useLangStore();
+  const lang = useLangStore((state) => state.lang );
   const i18n = useTranslation();
   useEffect(() => {
     i18n.i18n.changeLanguage(lang.lang);

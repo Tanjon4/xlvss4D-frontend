@@ -1,6 +1,8 @@
 // i18n.js
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+import useLangStore from "../store/language.store";
 
 import translationFR from "./locales/fr/translation.json";
 import translationEN from "./locales/en/translation.json";
@@ -12,10 +14,32 @@ const resources = {
   mg: { translation: translationMG },
 };
 
-i18n.use(initReactI18next).init({
+
+const langDefault = useLangStore.getState().lang;
+
+const zustandDetector = {
+  name: 'zustandDetector',
+  lookup() {
+    const { lang } = useLangStore.getState();
+    return lang;
+  },
+  cacheUserLanguage(lang) {
+    useLangStore.getState().setLang(lang);
+  },
+};
+
+i18n
+.use(LanguageDetector) // built-in detector (localStorage, browser, etc.)
+  .use({
+    type: 'languageDetector',
+    async: false,
+    detect: zustandDetector.lookup,
+    init: () => {},
+    cacheUserLanguage: zustandDetector.cacheUserLanguage,
+  })
+.use(initReactI18next).init({
   resources,
-  lng: "fr", // Valeur par défaut
-  fallbackLng: "fr",
+  fallbackLng: "en",
   interpolation: {
     escapeValue: false,
   },

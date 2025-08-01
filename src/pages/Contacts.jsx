@@ -5,6 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import Footer from "../components/layout/Footer";
 import { useEffect } from 'react';
+import Header from "../components/layout/Header";
 
 // Configuration des icônes Leaflet
 delete L.Icon.Default.prototype._getIconUrl;
@@ -20,11 +21,11 @@ const Contacts = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navigation />
-      
-      <div className=" py-4 px-5 md:px-10 max-w-7xl mx-auto w-full text-underline">
-        <ul className="flex items-center gap-2 text-sm md:text-base">
+    <div>
+      <Header/>
+      <Navigation/>
+      <div className="m-5 flex flex-row items-center">
+        <ul className="flex flex-row gap-4">
           <li>
             <Link to="/" className="text-gray-600 hover:text-blue-800 transition-colors">{t("Accueil")}</Link>
           </li>

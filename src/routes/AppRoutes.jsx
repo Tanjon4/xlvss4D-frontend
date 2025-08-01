@@ -37,7 +37,7 @@ const router = createBrowserRouter([
         element: <Suspense fallback={fallback}><Register/></Suspense>
     },
     {
-        path: "/list",
+        path: "/lists",
         element: <Suspense fallback={fallback}><ProductList/></Suspense>
     },
     {
