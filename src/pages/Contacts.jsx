@@ -3,6 +3,7 @@ import Navigation from "../components/layout/Navigation";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import Footer from "../components/layout/Footer";
 import { useEffect } from 'react';
 
 // Corriger les icônes manquants de Leaflet dans Webpack/Vite/CRA
@@ -158,9 +159,10 @@ const Contacts = () => {
         </div>
     </div>
 
-
+    <Footer />
       
     </div>
+  
   );
 }
 export default Contacts;
