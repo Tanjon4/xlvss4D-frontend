@@ -11,11 +11,11 @@ const Navigation = () => {
             <Link to="/" className="text-base ml-10">
                 Home
             </Link>
+            <Link to="/lists" className="text-base ml-10">
+                Products
+            </Link>
             <Link to="/contact" className="text-base ml-10">
                 Contacts
-            </Link>
-            <Link to="/produit" className="text-base ml-10">
-                Products
             </Link>
             <Link to="/login" className="text-base ml-10">
                 Login
@@ -23,13 +23,14 @@ const Navigation = () => {
             <Link to="/register" className="text-base ml-10">
                 Register
             </Link>
-            <Link to="/lists" className="text-base ml-10">
-                Products list
-            </Link>
+           
             </div>
         <div>
             <Link to="/serch" className="text-base text-black">
             <i class="fa-solid fa-magnifying-glass"></i>
+            </Link>
+            <Link to="/serch" className="text-base text-black ml-5">
+            <i class="fa-solid fa-cart-shopping"></i>
             </Link>
         </div>   
         </nav>
