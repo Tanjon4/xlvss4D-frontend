@@ -15,6 +15,9 @@ const { t } = useTranslation();
             <Link to="/" className="text-base ml-10">
                 {t("home")}
             </Link>
+            <Link to="/lists" className="text-base ml-10">
+                Products
+            </Link>
             <Link to="/contact" className="text-base ml-10">
                 {t("contacts")}
             </Link>
@@ -30,8 +33,11 @@ const { t } = useTranslation();
             <Link to="/serch" className="text-base text-black">
             <i class="fa-solid fa-magnifying-glass"></i>
             </Link>
+            <Link to="/serch" className="text-base text-black ml-5">
+            <i class="fa-solid fa-cart-shopping"></i>
+            </Link>
         </div>   
         </nav>
-        </>)
-}
+        </>
+)}
 export default Navigation;
