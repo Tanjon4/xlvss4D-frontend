@@ -5,6 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import Footer from "../components/layout/Footer";
 import { useEffect } from 'react';
+import Header from "../components/layout/Header";
 
 // Corriger les icônes manquants de Leaflet dans Webpack/Vite/CRA
 delete L.Icon.Default.prototype._getIconUrl;
@@ -20,6 +21,7 @@ L.Icon.Default.mergeOptions({
 const Contacts = () => {
   return (
     <div>
+      <Header/>
       <Navigation/>
       <div className="m-5 flex flex-row items-center">
         <ul className="flex flex-row gap-4">
