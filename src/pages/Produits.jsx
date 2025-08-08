@@ -3,8 +3,8 @@ import Navigation from "../components/layout/Navigation";
 const Produits = () => {
     return (
         <>
-        <h1>Produits</h1>
         <Navigation />
+        <h1>Produits</h1>
         </>
     )
 }
