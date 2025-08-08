@@ -1,9 +1,11 @@
 import Navigation from "../components/layout/Navigation";
 import Footer from "../components/layout/Footer";
+import Header from "../components/layout/Header";
 
 const Login = () => {
   return (
     <>
+    <Header/>
       <Navigation />
       <div className="flex justify-center items-center min-h-screen bg-gray-100">
         <form className="bg-white shadow-md rounded-2xl p-10 w-full max-w-md">

@@ -1,4 +1,6 @@
+import Header from "../components/layout/Header";
 import Navigation from "../components/layout/Navigation";
+import { useState } from "react";
 
 const ProductList = () => {
     const [products] = useState([
@@ -8,6 +10,7 @@ const ProductList = () => {
       ]);
     return (
         <>
+        <Header/>
         <Navigation />
     <div className="min-h-screen bg-gray-100 p-10">
       <h1 className="text-4xl font-bold text-center mb-10 text-gray-800">Liste des Produits</h1>
