@@ -1,5 +1,7 @@
 import LanguageSwitcher from "../testLangue";
 import CurrencyDisplay from "../TestPrice";
+import { Link } from "react-router-dom";
+
 
 const Header = () => {
   return (
@@ -11,7 +13,12 @@ const Header = () => {
        <div className="flex justify-around space-x-3 items-center">
             <CurrencyDisplay />
             <LanguageSwitcher/>
-            <p>My account</p>
+            <select name="" id="" className="bg-gray-800 text-gray-400">
+              <option value="" defaultChecked>My Account</option>
+            </select>
+            <Link to="/register">Register</Link>
+            <Link to="/login">Login</Link>
+           
        </div>
     </header>
   );
