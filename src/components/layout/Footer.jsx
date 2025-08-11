@@ -7,9 +7,9 @@ const Footer = () => {
       <div className="flex ">
         <div className="w-[50%]">
           <ul className="list-none flex space-x-12">
-            <li><Link to="">Home</Link></li>
-            <li><Link to="">Contact</Link></li>
-            <li><Link to="">Login</Link></li>
+            <li><Link to="">{t(home)}</Link></li>
+            <li><Link to="">{t(contacts)}</Link></li>
+            <li><Link to="">{t(login)}</Link></li>
           </ul>
           
         </div>
@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
       <div style={{ marginTop: "2rem" }}>
           <p>
-            ©2025 – created by Mamy, Sarannah, Mihaja, Tanjona, Dayan 
+            {t(copy_rigth)}
           </p>
           <p>e-commerce</p>
         </div>
