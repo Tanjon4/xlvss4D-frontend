@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
-
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+const { t } = useTranslation();
   return (
     <footer className="px-8 pt-2">
       <div className="flex ">
         <div className="w-[50%]">
           <ul className="list-none flex space-x-12">
-            <li><Link to="">{t(home)}</Link></li>
-            <li><Link to="">{t(contacts)}</Link></li>
-            <li><Link to="">{t(login)}</Link></li>
+            <li><Link to="">{t("home")}</Link></li>
+            <li><Link to="">{t("contacts")}</Link></li>
+            <li><Link to="">{t("login")}</Link></li>
           </ul>
           
         </div>
@@ -27,12 +28,11 @@ const Footer = () => {
       </div>
       <div style={{ marginTop: "2rem" }}>
           <p>
-            {t(copy_rigth)}
+            {t("copy_rigth")}
           </p>
           <p>e-commerce</p>
         </div>
     </footer>
-  );
-};
-
+  )
+}
 export default Footer;
