@@ -1,9 +1,35 @@
 {
   "welcome": "Tongasoa",
+<<<<<<< HEAD
   "home":"fandraisana",
   "contacts":"fifandraisana",
   "login":"miditra",
   "register":"hisoratra anarana",
   "productsList":"lisitry ny vokatra",
   "copy_rigth": " ©2025 – Noforonon'ny Mamy, Sarannah, Mihaja, Tanjona, Dayan "
+=======
+  "home": "Fandraisana",
+  "contacts": "Fifandraisana",
+  "products": "Vokatra",
+  "login": "Hiditra",
+  "register": "Hisoratra anarana",
+  "productsList": "Lisitr'ireo vokatra",
+  "we_are_here": "Eto izahay",
+  "Contact_Us": "Mifandraisa aminay",
+  "There_are": "Misy fomba maro hifandraisana aminay. Afaka mandefa hafatra ianao, miantso anay, na mandefa mailaka — fidio izay mety aminao indrindra.",
+  
+  "Phone": "Telefaona",
+  "email": "Mailaka",
+  "addresse": "Adiresy",
+  "heure_ouverture": "Ora fisokafana",
+  "days": "(Alatsinainy–Zoma)",
+  "Dimanche": "Alahady: Mikatona",
+  "suivre": "Araho izahay",
+  "prennez_contact": "Mifandraisa aminay!",
+  "remplir": "Fenoy ny taratasy etsy ambany raha te hahazo valiny haingana sy miafina ianao.",
+  "nom": "Anarana",
+  "site": "Tranokala",
+  "message": "Hafatra",
+  "envoyer_message": "Alefa ny hafatra"
+>>>>>>> 0d78dfbeb9b787bb3baf0479761a3ccafc4a7396
 }
