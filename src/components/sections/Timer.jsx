@@ -51,10 +51,10 @@ function CountdownTimer() {
           ].map(({ label, value }) => (
             <div
               key={label}
-              className="w-24 h-24 rounded-full bg-white shadow-md flex flex-col items-center justify-center"
+              className="w-24 h-24 rounded-full bg-red-400 shadow-md flex flex-col items-center justify-center"
             >
-              <div className="text-3xl font-bold text-red-500">{value}</div>
-              <div className="text-gray-500 text-sm">{label}</div>
+              <div className="text-3xl font-bold text-white">{value}</div>
+              <div className="text-gray-100 text-sm">{label}</div>
             </div>
           ))}
         </div>
