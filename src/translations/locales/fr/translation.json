@@ -6,9 +6,7 @@
   "login": "Connexion",
   "register": "Inscription",
   "productsList": "Liste des Produits",
-<<<<<<< HEAD
-  "copy_rigth": " ©2025 – créer par Mamy, Sarannah, Mihaja, Tanjona, Dayan "
-=======
+  "copy_rigth": " ©2025 – créer par Mamy, Sarannah, Mihaja, Tanjona, Dayan ",
   "we_are_here": "Nous sommes ici",
   "Contact_Us": "Contactez-nous",
   "There_are":"Il existe de nombreuses façons de nous contacter. Vous pouvez nous envoyer un message, nous appeler ou nous écrire un email, choisissez ce qui vous convient le mieux.", 
@@ -26,6 +24,5 @@
   "site": "Site web",
   "message": "Message",
   "envoyer_message": "Envoyer le message"
->>>>>>> 0d78dfbeb9b787bb3baf0479761a3ccafc4a7396
 
 }
