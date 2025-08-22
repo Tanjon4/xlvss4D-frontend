@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function CountdownTimer() {
-  const initialSeconds = 2 * 24 * 3600 + 23 * 3600 + 59 * 60 + 60;
+  const initialSeconds = 2 * 24 * 3600 + 20 * 3600 + 56 * 60 + 8;
   const [secondsLeft, setSecondsLeft] = useState(initialSeconds);
 
   useEffect(() => {
@@ -25,51 +25,45 @@ function CountdownTimer() {
   const minutes = Math.floor((secondsLeft % 3600) / 60);
   const seconds = secondsLeft % 60;
 
-  const format = (num) => num.toString().padStart(2, '0');
-
   return (
-    <div
-      className="bg-cover bg-center min-h-screen p-8"
-      style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1470&q=80')",
-      }}
-    >
-      {/* Titre */}
-      <h1 className="mb-6 text-3xl font-extrabold text-black text-right">
-        Deal Of The Week
-      </h1>
-
-      {/* Ligne contenant les cercles + bouton */}
-      <div className="flex justify-end items-center gap-6 flex-nowrap overflow-x-auto">
-        {/* Cercles */}
-        {[
-          { label: 'Jours', value: days },
-          { label: 'Heures', value: format(hours) },
-          { label: 'Minutes', value: format(minutes) },
-          { label: 'Secondes', value: format(seconds) },
-        ].map(({ label, value }) => (
-          <div
-            key={label}
-            className="w-28 h-28 rounded-full bg-blue-700 bg-opacity-80 text-white flex flex-col justify-center items-center shadow-xl"
-          >
-            <div className="text-3xl font-bold">{value}</div>
-            <div className="text-sm mt-2">{label}</div>
-          </div>
-        ))}
-
-        {/* Bouton à droite */}
-        <button className="px-4 py-2 rounded-full bg-black text-white text-sm hover:bg-gray-800 transition shrink-0">
-          Shop Now
-        </button>
+    <div className="flex items-center justify-between bg-white-50 min-h-screen px-12">
+      {/* Partie gauche : l'image */}
+      <div className="flex-1">
+        <img
+          src="https://i.pinimg.com/1200x/be/6b/6f/be6b6f7a4bfd87dfb1db94a8dd1e15f0.jpg"
+          alt="Model"
+          className="object-contain max-h-[600px]"
+        />
       </div>
 
-      {/* Message de fin */}
-      {secondsLeft === 0 && (
-        <p className="mt-6 text-red-400 font-bold text-lg drop-shadow-lg text-right">
-          Temps écoulé !
-        </p>
-      )}
+      {/* Partie droite : le texte et le timer */}
+      <div className="flex-1 text-center">
+        <h1 className="text-3xl font-bold text-gray-900">Deal Of The Week</h1>
+        <div className="w-20 h-1 bg-red-500 mx-auto my-3"></div>
+
+        {/* Timer */}
+        <div className="flex justify-center gap-6 mt-6">
+          {[
+            { label: 'Day', value: days },
+            { label: 'Hours', value: hours },
+            { label: 'Mins', value: minutes },
+            { label: 'Sec', value: seconds },
+          ].map(({ label, value }) => (
+            <div
+              key={label}
+              className="w-24 h-24 rounded-full bg-white shadow-md flex flex-col items-center justify-center"
+            >
+              <div className="text-3xl font-bold text-red-500">{value}</div>
+              <div className="text-gray-500 text-sm">{label}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* Bouton */}
+        <button className="mt-8 px-6 py-3 bg-black text-white font-semibold rounded hover:bg-gray-800">
+          SHOP NOW
+        </button>
+      </div>
     </div>
   );
 }
