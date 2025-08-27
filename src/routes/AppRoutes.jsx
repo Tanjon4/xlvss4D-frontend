@@ -6,7 +6,7 @@ import ProductList from "../pages/ProductList";
 import Register from "../pages/Register";
 import Login from "../pages/Login";
 import Produits from "../pages/Produits";
-import Single from "../pages/single";
+import Single from "../pages/Single";
 
 
 
