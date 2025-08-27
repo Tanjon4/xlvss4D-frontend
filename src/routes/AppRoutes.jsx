@@ -6,6 +6,7 @@ import ProductList from "../pages/ProductList";
 import Register from "../pages/Register";
 import Login from "../pages/Login";
 import Produits from "../pages/Produits";
+import Single from "../pages/single";
 
 
 
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
     {
         path: "/lists",
         element: <Suspense fallback={fallback}><ProductList/></Suspense>
+    },
+    {
+        path: "/Single",
+        element: <Suspense fallback={fallback}><Single/></Suspense>
     },
     {
         path: "*",
